@@ -91,6 +91,7 @@ margin: 0 auto;
 Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Transgêneros, Queers, Intersexuais, Assexuais e mais) e seus aliados se unem para celebrar a diversidade, a autoaceitação e o amor em todas as suas formas. 
 É uma época marcada por paradas festivas, eventos culturais, debates e manifestações em todo o mundo.</p>
 <hr style="border: 0; border-top: 2px solid #000000; margin: 30px auto; max-width: 90%; opacity: 0.5;">
+<button>🏳️‍🌈<span>0</span></button>
  
 
 <h2>Identidade não é a totalidade do ser</h2>
@@ -119,6 +120,20 @@ Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Tr
 
     
 </body>
+
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado(){
+ let texto = botao.querySelector("span");
+ texto.textContent++;
+
+}
+
+
+
+</script>
 
 
 </html>
