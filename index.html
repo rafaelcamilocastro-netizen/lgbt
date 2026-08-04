@@ -134,7 +134,9 @@ Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Tr
 </body>
 
 <script>
-const botao = document.querySelector("button");
+const botoes = document.querySelectorAll("button");
+
+botoes.forEach(function(botao) {
 botao.addEventListener("click", botaoClicado);
 
 function botaoClicado(){
@@ -142,6 +144,10 @@ function botaoClicado(){
  texto.textContent++;
 
 }
+
+
+});
+
 
 </script>
 
