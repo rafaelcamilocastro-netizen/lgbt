@@ -128,19 +128,60 @@ div[style*="justify-content: center"] {
 
 
 .botao-like {
-  background-color: transparent;
-  color: #d42d70;
-  border: 2px solid #d42d70;
+  background: linear-gradient(
+    90deg,
+    #ffb3ba,
+    #ffd6a5,
+    #fff3a3,
+    #b8e6b8,
+    #a8d8ea,
+    #c9b6e4
+  );
+
+  color: #6b4f6f;
+  border: 2px solid #d9b8df;
   padding: 10px 20px;
   font-weight: bold;
-  border-radius: 30px; /* Deixa o botão redondo */
+  border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease; /* Deixa o efeito suave */
+
+  box-shadow: 0 4px 10px rgba(180, 140, 190, 0.2);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 }
+
 .botao-like:hover {
-  background-color: #d42d70;
-  color: #FFFFFF;
-  transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+  transform: scale(1.06);
+  filter: brightness(1.04);
+
+  box-shadow:
+    0 6px 15px rgba(180, 140, 190, 0.3);
+}
+
+/* Pulo ao clicar */
+.botao-like:active {
+  animation: pulinho 0.35s ease;
+}
+
+@keyframes pulinho {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  35% {
+    transform: translateY(-10px) scale(1.05);
+  }
+
+  65% {
+    transform: translateY(2px) scale(0.98);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
  </style>
     <meta charset="UTF-8">
