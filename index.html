@@ -78,64 +78,33 @@ background-color: #FFB6C1;
 
 }
 
-div[style*="display: flex"] {
-    padding: 20px;
-    border-radius: 20px;
-
-    background: linear-gradient(
-        135deg,
-        #ff0055,
-        #ff8a00,
-        #ffe600,
-        #00e676,
-        #00c8ff,
-        #7b2cff,
-        #ff00c8
-    );
-
-    background-size: 400% 400%;
-    animation: rainbow 8s ease infinite;
-
-    box-shadow:
-        0 0 15px #ff00c8,
-        0 0 30px #7b2cff,
-        0 0 45px #00c8ff;
-}
-
-div[style*="display: flex"] audio {
-    width: 90%;
-    max-width: 500px;
-    border-radius: 30px;
-
-    filter:
-        drop-shadow(0 0 5px white)
-        drop-shadow(0 0 10px #ff00c8);
-
-    transition: 0.3s ease;
-}
-
-div[style*="display: flex"] audio:hover {
-    transform: scale(1.03);
-
-    filter:
-        drop-shadow(0 0 8px #ff0055)
-        drop-shadow(0 0 15px #00c8ff)
-        drop-shadow(0 0 20px #ff00c8);
-}
-
-@keyframes rainbow {
-    0% {
-        background-position: 0% 50%;
+div[style*="justify-content: center"] {
+        margin: 20px 0 !important;
     }
 
-    50% {
-        background-position: 100% 50%;
+   
+    audio {
+        border-radius: 12px;
+        padding: 3px;
+        background: linear-gradient(
+            90deg,
+            #e8a4a4,
+            #f0c59a,
+            #e6df9c,
+            #a9d8b8,
+            #a9c7e8,
+            #c5afe0
+        );
+        box-shadow: 0 4px 12px rgba(120, 90, 130, 0.15);
+        accent-color: #b99acb;
     }
 
-    100% {
-        background-position: 0% 50%;
+    
+    audio:hover {
+        box-shadow: 0 5px 15px rgba(120, 90, 130, 0.22);
+        transition: 0.3s ease;
     }
-}
+</style>
 
 .botao-like {
   background-color: transparent;
