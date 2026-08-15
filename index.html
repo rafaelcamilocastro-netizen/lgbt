@@ -77,6 +77,81 @@ button{
 background-color: #FFB6C1;
 
 }
+
+div[style*="display: flex"] {
+    padding: 20px;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ff0055,
+        #ff8a00,
+        #ffe600,
+        #00e676,
+        #00c8ff,
+        #7b2cff,
+        #ff00c8
+    );
+
+    background-size: 400% 400%;
+    animation: rainbow 8s ease infinite;
+
+    box-shadow:
+        0 0 15px #ff00c8,
+        0 0 30px #7b2cff,
+        0 0 45px #00c8ff;
+}
+
+div[style*="display: flex"] audio {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+
+    filter:
+        drop-shadow(0 0 5px white)
+        drop-shadow(0 0 10px #ff00c8);
+
+    transition: 0.3s ease;
+}
+
+div[style*="display: flex"] audio:hover {
+    transform: scale(1.03);
+
+    filter:
+        drop-shadow(0 0 8px #ff0055)
+        drop-shadow(0 0 15px #00c8ff)
+        drop-shadow(0 0 20px #ff00c8);
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.botao-like {
+  background-color: transparent;
+  color: #d42d70;
+  border: 2px solid #d42d70;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 30px; /* Deixa o botão redondo */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Deixa o efeito suave */
+}
+.botao-like:hover {
+  background-color: #d42d70;
+  color: #FFFFFF;
+  transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+}
  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +171,7 @@ background-color: #FFB6C1;
 Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Transgêneros, Queers, Intersexuais, Assexuais e mais) e seus aliados se unem para celebrar a diversidade, a autoaceitação e o amor em todas as suas formas. 
 É uma época marcada por paradas festivas, eventos culturais, debates e manifestações em todo o mundo.</p>
 <hr style="border: 0; border-top: 2px solid #000000; margin: 30px auto; max-width: 90%; opacity: 0.5;">
-<button>🏳️‍🌈<span>0</span></button>
+<button class="botao-like">❤️ Curtir</button>
  
 
 <h2>Identidade não é a totalidade do ser</h2>
@@ -104,7 +179,7 @@ Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Tr
 <p>No entanto, celebrar o Orgulho também significa reconhecer que nenhuma pessoa se define por apenas um aspecto de sua vida. A orientação sexual e a identidade de gênero são partes fundamentais de quem somos, mas não são a totalidade do nosso ser. Uma pessoa LGBT+ é também um profissional dedicado, um artista talentoso, um amigo leal, um filho carinhoso ou um cientista focado. Reduzir a existência de alguém apenas à sua sexualidade ou gênero apaga a riqueza de suas outras paixões, talentos, conquistas e histórias de vida.</p>
 <hr style="border: 0; border-top: 2px solid #000000; margin: 30px auto; max-width: 90%; opacity: 0.5;">
 
-<button>🏳️‍🌈<span>0</span></button>
+<button class="botao-like">❤️ Curtir</button>
 
 <h2>O Orgulho no dia a dia (O que fazemos além de junho)</h2>
 
@@ -116,7 +191,7 @@ Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Tr
     </ul>
 <hr style="border: 0; border-top: 2px solid #000000; margin: 30px auto; max-width: 90%; opacity: 0.5;">
 
-<button>🏳️‍🌈<span>0</span></button>
+<button class="botao-like">❤️ Curtir</button>
 
 <h2>A força do respeito: construindo espaços seguros todos os dias</h2>
 <p>Para que a celebração do Orgulho traga mudanças reais, precisamos construir espaços seguros no nosso cotidiano. Isso significa praticar a empatia ativa, combater o preconceito em conversas do dia a dia e garantir que a escola, o trabalho e o lar sejam ambientes onde todos possam se expressar sem medo. Ser um aliado ou parte da comunidade é um compromisso diário com o respeito mútuo. Afinal, uma sociedade mais justa e rica só existe quando cada pessoa tem o direito de ser quem é com total dignidade, segurança e liberdade.
@@ -124,7 +199,19 @@ Junho é o momento em que a comunidade LGBTQIA+ (Lésbicas, Gays, Bissexuais, Tr
 </p>
 <hr style="border: 0; border-top: 2px solid #000000; margin: 30px auto; max-width: 90%; opacity: 0.5;">
 
-<button>🏳️‍🌈<span>0</span></button>
+<button class="botao-like">❤️ Curtir</button>
+
+<h2>Agora escute um pouco sobre esse assunto!!</h2>
+
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+    <audio controls>
+        <source src="Áudio de Rafa e Milena (1).mp3" type="audio/mp3">
+        
+    </audio>
+</div>
+
+<button class="botao-like">❤️ Curtir</button>
 
 <h4>por: Milena 27 e Rafael 28</h4>
 </main>
