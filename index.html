@@ -83,28 +83,49 @@ div[style*="justify-content: center"] {
     }
 
    
-    audio {
-        border-radius: 12px;
-        padding: 3px;
+   audio {
+        width: 340px;
+        height: 52px;
+        border-radius: 16px;
+        padding: 4px;
+
         background: linear-gradient(
             90deg,
-            #e8a4a4,
-            #f0c59a,
-            #e6df9c,
-            #a9d8b8,
-            #a9c7e8,
-            #c5afe0
+            #ff6b6b,
+            #ff9f43,
+            #ffe66d,
+            #6bcf8e,
+            #4dabf7,
+            #8e7dff,
+            #d66efd
         );
-        box-shadow: 0 4px 12px rgba(120, 90, 130, 0.15);
-        accent-color: #b99acb;
+
+        box-shadow:
+            0 6px 20px rgba(214, 110, 253, 0.25),
+            0 4px 12px rgba(77, 171, 247, 0.2);
+
+        accent-color: #a855f7;
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
     }
 
-    
     audio:hover {
-        box-shadow: 0 5px 15px rgba(120, 90, 130, 0.22);
-        transition: 0.3s ease;
+        transform: translateY(-3px) scale(1.02);
+
+        box-shadow:
+            0 10px 30px rgba(214, 110, 253, 0.35),
+            0 6px 20px rgba(77, 171, 247, 0.3);
     }
-</style>
+
+    audio:focus {
+        outline: none;
+        box-shadow:
+            0 0 0 4px rgba(214, 110, 253, 0.25),
+            0 8px 25px rgba(142, 125, 255, 0.35);
+    }
+
 
 .botao-like {
   background-color: transparent;
